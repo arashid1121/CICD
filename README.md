@@ -1,2 +1,2 @@
 # CICD
-CICD Tarining
+CICD Training
