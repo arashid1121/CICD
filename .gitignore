@@ -29,3 +29,5 @@ service/src/generated/*
 .idea/
 *.log
 .mvn
+mvnw
+mvnw.cmd
