@@ -6,11 +6,10 @@ pipeline {
         }
     }
     stages {
-        stage('Build') { 
+        stage('DirChange') { 
             steps {
-				sh cd jenkins
-				sh 'pwd'
-                sh 'mvn -B -DskipTests clean package' 
+		dir('jenkins')
+		sh pwd  
             }
         }
     }
