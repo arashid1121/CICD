@@ -1,0 +1,31 @@
+#Eclipse metadata
+.project
+.settings
+.DS_Store
+.metadata
+
+#Build results
+api/target
+service/target
+integration-tests/target
+model/target
+target
+bin/
+
+#External Configuration
+service/application.properties
+api/application.properties
+
+*.versionsBackup
+
+#Spring
+.springBeans
+
+### generated codes ###
+service/src/generated/*
+
+#Intellij
+*.iml
+.idea/
+*.log
+.mvn
