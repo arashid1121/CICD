@@ -8,13 +8,8 @@ pipeline {
        stages {
         stage('Build') { 
             steps {
-                echo 'Hello All'
-                echo env.WORKSPACE
-                dir ('/var/jenkins_home/workspace/jassmaventest/CICD')
-                   {
-                           sh 'mvn -B -DskipTests clean package'
-                   }
-                
+                echo 'Executing Maven Build'
+                           sh 'mvn -f /CICD/pom.xml -B -DskipTests clean package'
             }
         }
     }
