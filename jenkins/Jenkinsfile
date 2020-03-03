@@ -9,7 +9,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Executing Maven Build'
-                           sh 'mvn -f /CICD/pom.xml -B -DskipTests clean package'
+                           sh 'mvn -f /var/jenkins_home/workspace/jassmaventest/arashid1121/CICD/pom.xml -B -DskipTests clean package'
             }
         }
     }
