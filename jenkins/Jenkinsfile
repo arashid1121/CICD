@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+                dir '/var/jenkins_home/workspace/jassmaventest/CICD'
                 sh 'mvn -B -DskipTests clean package' 
             }
         }
