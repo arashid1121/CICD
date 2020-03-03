@@ -3,9 +3,8 @@ pipeline {
        stages {
         stage('Build') { 
             steps {
-                echo pwd
-                cd 'CICD'
-                echo pwd
+                echo 'Hello All'
+                echo env.WORKSPACE
                 sh 'mvn -B -DskipTests clean package' 
             }
         }
